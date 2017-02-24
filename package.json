@@ -1,6 +1,6 @@
 {
   "name": "timemarkdate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "async log time mark and report",
   "main": "index.js",
   "scripts": {
@@ -10,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xueduany/TMD.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xueduany/TMD/issues"
+  },
+  "homepage": "https://github.com/xueduany/TMD#readme"
 }
