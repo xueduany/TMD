@@ -31,3 +31,6 @@ http://xx.xx.xx.xx/log?key=xxx
 
 ##效果##
 ![Demo](demo.png "Demo")
+
+##NPM##
+npm install timemarkdebug
