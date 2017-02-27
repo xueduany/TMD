@@ -1,7 +1,7 @@
 {
-  "name": "timemarkdate",
-  "version": "1.0.1",
-  "description": "async log time mark and report",
+  "name": "timemarkdebug",
+  "version": "1.0.0",
+  "description": "async log time mark and report for debug",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
