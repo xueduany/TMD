@@ -102,12 +102,14 @@ var tplFn = (function() {
 
 app.get('/report', function(req, res) {
 	var tpl = file.readFileSync('report.tpl.html').toString();
-	console.log(tpl);
+	__TIME_MARK_DEBUG.sort(function(a, b) {
+		return a.time - b.time;
+	})
 	res.end(tplFn(tpl, {
 		TimeMarkDebug : __TIME_MARK_DEBUG
 	}));
 });
 
 var server = app.listen(listenerPort, function() {
-
+	console.log('开始监听!');
 });

@@ -23,7 +23,14 @@ td,th {
 	margin: 0;
 	padding: 0;
 	border: 1px solid #ccc;
-	min-width: 100px;
+	min-width: 50px;
+	max-width: 500px;
+	word-break: break-all;
+}
+
+tr:nth-child(even) {
+	background-color: #66CD00;
+	color: #fff;
 }
 </style>
 	<script>
@@ -52,18 +59,21 @@ td,th {
 		<caption>Time Mark Debug</caption>
 		</thead>
 		<thead>
-			<th>Log</th>
+			<th>\</th>
+			<td>Log</tD>
 			<td>Spend</td>
+			<td>Date</td>
 			<td>From</td>
 		</thead>
 		<tbody>
 			{% for(var i = 0; TimeMarkDebug.length && (i < TimeMarkDebug.length);
 			i++){ %}
 			<tr>
-				<th>{%= TimeMarkDebug[i].id %}
-				</td>
+				<th>{%= i+1 %}</th>
+				<td>{%= TimeMarkDebug[i].id %}</td>
 				<td>{%= i==0 ? 0 :
 					(TimeMarkDebug[i].time-TimeMarkDebug[i-1].time) %}</td>
+				<td style="min-width:120px">{%= TimeMarkDebug[i].time %}</td>
 				<td>{%= TimeMarkDebug[i].url %}</td>
 			</tr>
 			{% } %}
