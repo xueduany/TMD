@@ -63,7 +63,7 @@ tr:nth-child(even) {
 		<thead>
 			<th>\</th>
 			<td>Log</tD>
-			<td>Spend</td>
+			<td>Inteval</td>
 			<td>Date</td>
 			<td>From</td>
 		</thead>
@@ -77,6 +77,15 @@ tr:nth-child(even) {
 					(TimeMarkDebug[i].time-TimeMarkDebug[i-1].time) %}</td>
 				<td style="min-width:120px">{%= TimeMarkDebug[i].time %}</td>
 				<td>{%= TimeMarkDebug[i].url %}</td>
+			</tr>
+			{% } %}
+			{% if(TimeMarkDebug.length > 1){ %}
+			<tr>
+				<th></th>
+				<td style="background-color: red;color: #fff;">合计：</td>
+				<td style="background-color: red;color: #fff;">{%= TimeMarkDebug[TimeMarkDebug.length-1].time - TimeMarkDebug[0].time %}</td>
+				<td></td>
+				<td></td>
 			</tr>
 			{% } %}
 		</tbody>
