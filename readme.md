@@ -29,15 +29,18 @@ http://xx.xx.xx.xx/log?key=xxx
 发送日志，key可以不填
 
 
-##效果##
+##效果
 ![Demo](demo.png "Demo")
 
-##NPM##
+##NPM
 npm install timemarkdebug
 
-##使用##
-进入.node_module/timemarkdebug目录下
-在当前目录node index.js
+
 
 http://xx.xx.xx.xx/report方法
 http://xx.xx.xx.xx/report
+
+
+##使用
+进入.node_module/timemarkdebug目录下
+在当前目录node index.js
