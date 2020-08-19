@@ -35,3 +35,9 @@ http://xx.xx.xx.xx/log?key=xxx
 ##NPM##
 npm install timemarkdebug
 
+##使用##
+进入.node_module/timemarkdebug目录下
+在当前目录node index.js
+
+http://xx.xx.xx.xx/report方法
+http://xx.xx.xx.xx/report
