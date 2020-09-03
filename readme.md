@@ -44,3 +44,5 @@ http://xx.xx.xx.xx/report
 ##使用
 进入.node_module/timemarkdebug目录下
 在当前目录node index.js
+
+注意：使用firefox效果较好，使用chrome刷新一定几率会出现html未渲染出来
