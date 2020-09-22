@@ -4,14 +4,32 @@
   "description": "async log time mark and report for debug",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js"
   },
   "author": "xueduanyang",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.1"
+    "css-loader": "^4.3.0",
+    "express": "^4.14.1",
+    "interactjs": "^1.9.22",
+    "moment": "^2.28.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "cross-env": "^7.0.2",
+    "react": "^16.13.1",
+    "react-calendar-timeline": "^0.27.0",
+    "react-dom": "^16.13.1",
+    "webpack-dev-server": "^3.11.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xueduany/TMD.git"
