@@ -35,10 +35,10 @@ http://xx.xx.xx.xx/log?key=xxx
 ##NPM
 npm install timemarkdebug
 
+默认启动端口5387，修改端口，请修改index.js的listenerPort
 
-
-http://xx.xx.xx.xx/report方法
-http://xx.xx.xx.xx/report
+http://xx.xx.xx.xx:5387/report方法
+http://xx.xx.xx.xx:5387/report
 
 
 ##使用
@@ -46,3 +46,5 @@ http://xx.xx.xx.xx/report
 在当前目录node index.js
 
 注意：使用firefox效果较好，使用chrome刷新一定几率会出现html未渲染出来
+
+##新版支持按照时间轴展示
