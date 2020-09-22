@@ -41,6 +41,6 @@
   },
   "homepage": "https://github.com/xueduany/TMD#readme",
   "bin": {
-    "TMD": "./bin/TMD.js"
+    "TMD": "bin/TMD.js"
   }
 }
