@@ -1,6 +1,6 @@
 {
   "name": "timemarkdebug",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "async log time mark and report for debug",
   "main": "index.js",
   "scripts": {
