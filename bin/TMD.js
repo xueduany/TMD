@@ -1,4 +1,5 @@
 #!/usr/bin/env node
 
 const exec = require("child_process").exec;
-exec('node '+__dirname+'/../index.js').stdout.pipe(process.stdout);
+const args = process.argv.slice(1);
+exec('node '+__dirname+'/../index.js '+args.join(' ')).stdout.pipe(process.stdout);

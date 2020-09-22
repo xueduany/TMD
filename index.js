@@ -8,6 +8,10 @@ var listenerPort = 5387;
 var express = require("express");
 var file = require("fs");
 var app = express();
+var args = process.argv.slice(2);
+if(args && args.length){
+	listenerPort = args[0];
+}
 
 var __TIME_MARK_DEBUG = [];
 app.get("/log", function (req, res) {
@@ -124,5 +128,5 @@ app.get("/bundle.js", function (req, res) {
 });
 
 var server = app.listen(listenerPort, function () {
-    console.log("开始监听!");
+    console.log("开始监听本机端口="+listenerPort);
 });
