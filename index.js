@@ -7,6 +7,7 @@ var listenerPort = 5387;
 
 var express = require("express");
 var file = require("fs");
+var path = require("path");
 var app = express();
 var args = process.argv.slice(2);
 if(args && args.length){
@@ -111,7 +112,7 @@ var tplFn = (function () {
 })();
 
 app.get("/report", function (req, res) {
-    var tpl = file.readFileSync("report.tpl.html").toString();
+    var tpl = file.readFileSync(path.resolve(__dirname, "report.tpl.html")).toString();
     __TIME_MARK_DEBUG.sort(function (a, b) {
         return a.time - b.time;
     });

@@ -58,10 +58,11 @@ tr:nth-child(even) {
 			window.timeoutClearIfm = setTimeout(function(){
 				document.body.removeChild(window.clearIfm);
 				window.clearIfm = null;
+				location.reload(true);
 			}, 3000);
 		}
 	</script>
-	<button onClick="window.clear()">点我清空ServerLog缓存，然后自己点浏览器刷新</button>
+	<button onClick="window.clear()">点我清空ServerLog缓存，然后浏览器刷新</button>
 
     <div id="root"></div>
 
